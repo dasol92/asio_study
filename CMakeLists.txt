@@ -53,5 +53,8 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIR})
 link_libraries(${Boost_LIBRARIES})
 
-add_executable(asio_server synchronous_server.cpp)
-add_executable(asio_client synchronous_client.cpp)
+add_executable(sync_tcp_server synchronous_tcp/sync_server.cpp)
+add_executable(sync_tcp_client synchronous_tcp/sync_client.cpp)
+
+add_executable(async_tcp_server asynchronous_tcp/async_server.cpp)
+add_executable(async_tcp_client asynchronous_tcp/async_client.cpp)

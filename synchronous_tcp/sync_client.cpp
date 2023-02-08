@@ -27,7 +27,7 @@ int main() {
     for (int i = 0; i < 7; ++i) {
         char szMessage[128] = {0,};
         sprintf_s(szMessage, 128 - 1, "%d - Send Message", i);
-        int nMsgLen = strnlen_s(szMessage, 128 - 1);
+        size_t nMsgLen = strnlen_s(szMessage, 128 - 1);
 
         boost::system::error_code ignored_error;
         socket.write_some(boost::asio::buffer(szMessage, nMsgLen),
