@@ -1,6 +1,7 @@
 {
 	"files.associations": {
 		"ostream": "cpp",
-		"*.ipp": "cpp"
+		"*.ipp": "cpp",
+		"system_error": "cpp"
 	}
 }

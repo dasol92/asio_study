@@ -16,7 +16,7 @@ int main(int, char **) {
 
     while (true) {
         std::array<char, 128> buf;
-        buf.assign(0);
+        buf.fill(0);
         boost::system::error_code error;
         size_t len = socket.read_some(boost::asio::buffer(buf), error);
         if (error) {
@@ -33,7 +33,7 @@ int main(int, char **) {
             0,
         };
         sprintf_s(szMessage, 128 - 1, "Re:%s", &buf[0]);
-        int nMsgLen = strnlen_s(szMessage, 128 - 1);
+        size_t nMsgLen = strnlen_s(szMessage, 128 - 1);
         boost::system::error_code ignored_error;
         socket.write_some(boost::asio::buffer(szMessage, nMsgLen),
                           ignored_error);

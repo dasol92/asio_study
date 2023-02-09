@@ -36,7 +36,7 @@ int main() {
         std::cout << "Sent: " << szMessage << std::endl;
 
         std::array<char, 128> buf;
-        buf.assign(0);
+        buf.fill(0);
         boost::system::error_code error;
 
         size_t len = socket.read_some(boost::asio::buffer(buf), error);
