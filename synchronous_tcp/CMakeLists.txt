@@ -1,0 +1,2 @@
+add_executable(sync_tcp_server sync_server.cpp)
+add_executable(sync_tcp_client sync_client.cpp)
