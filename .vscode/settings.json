@@ -2,6 +2,18 @@
 	"files.associations": {
 		"ostream": "cpp",
 		"*.ipp": "cpp",
-		"system_error": "cpp"
+		"system_error": "cpp",
+		"xiosbase": "cpp",
+		"array": "cpp",
+		"bitset": "cpp",
+		"deque": "cpp",
+		"initializer_list": "cpp",
+		"list": "cpp",
+		"type_traits": "cpp",
+		"vector": "cpp",
+		"xhash": "cpp",
+		"xstring": "cpp",
+		"xtree": "cpp",
+		"xutility": "cpp"
 	}
 }

@@ -8,7 +8,6 @@
 class Session {
   public:
     Session(boost::asio::io_service &io_service) : m_Socket(io_service) {
-        SetConsoleOutputCP(CP_UTF8);
     }
 
     boost::asio::ip::tcp::socket &Socket() { return m_Socket; }
